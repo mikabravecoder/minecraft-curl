@@ -10,7 +10,7 @@ sleep 6
 clear
 pwd
 sleep 3
-cat /etc/os-release
+cat /etc/os-release/
 sleep 5
 echo "preferences { ctrl_c_copy = true ctrl_v_paste = true}" >$HOME/.gotty
 echo "preferences { ctrl_c_copy = true ctrl_v_paste = true}" >$HOMEA/.gotty
