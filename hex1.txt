@@ -119,7 +119,7 @@ Sinstalled="Installing WGET"
 notify
 echo "|===============>|80%"
 mkdir -p $HOMEA
-apth install xz-utils wget zip proot rename python
+apth install xz-utils wget zip rename python unzip
 Sinstalled="Wget is installed [OK]"
 notify
 fi
@@ -135,10 +135,7 @@ Ginstalled="Qemu-Kvm is installed [OK]"
 fi
 notify
 echo "Searching -> Debian package"
-echo "|===============>..|90%"
-Winstalled="Linux package already installed [Info]"
-if ! [ -f $HOMEA/proot ];
-then
+echo "|===============>..|90|"
 Winstalled="Linux package installed [OK]"
 fi
 
@@ -161,8 +158,6 @@ echo "cd $HOME/vt && proot -r . -S . /bin/bash">>$HOME/DebStart.sh
 chmod $HOME/DebStart.sh
 
 echo "--------------"
-if [ -f $HOMEA/gotty ];
-then
 rm -r 1.sh
 echo "**| Open url: $SERVER_IP:$SERVER_PORT |**"
 echo " "
@@ -184,7 +179,7 @@ echo "--------------"
 if ! [ -f $HOME/startcustom.sh ];
 then
 echo "startcustom.sh not found. Creating..."
-echo "$HOMEA/gotty -p $SERVER_PORT -w bash &">$HOME/startcustom.sh
+echo "$HOMEA/qemu-kvm -p $SERVER_PORT -w bash &">$HOME/startcustom.sh
 chmod +x $HOME/startcustom.sh
 fi
 
