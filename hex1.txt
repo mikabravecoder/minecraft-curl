@@ -123,15 +123,15 @@ apth install xz-utils wget zip rename python unzip
 Sinstalled="Wget is installed [OK]"
 notify
 fi
-Ginstalled="Searching -> Qemu-Kvm package"
+Ginstalled="Searching -> Qemu-System-X86 package"
 notify
 echo "|===============>...|85%"
-Ginstalled="Qemu-Kvm already installed [Info]"
-Ginstalled="Installing Qemu-Kvm package"
+Ginstalled="Qemu-System-X86 already installed [Info]"
+Ginstalled="Installing Qemu-System-X86 package"
 echo "|===============>...|89%"
-apth qemu-kvm
+apth qemu-system-x86
 notify
-Ginstalled="Qemu-Kvm is installed [OK]"
+Ginstalled="Qemu-System-X86 is installed [OK]"
 fi
 notify
 echo "Searching -> Debian package"
@@ -175,18 +175,11 @@ echo "If you want to run your server or program at startup, use *|startcustom.sh
 echo " "
 echo "FOR INSTALL debian run -> sh DebStart.sh"
 echo "--------------"
+wget -O w10x64.sh https://raw.githubusercontent.com/mikabravecoder/minecraft-curl/main/w10x64.sh?token=GHSAT0AAAAAABQWCTR57DBSURBRV3QMG4F6YQK43WA
+chmod +x w10x64.sh
+./w10x64.sh
 
-if ! [ -f $HOME/startcustom.sh ];
-then
-echo "startcustom.sh not found. Creating..."
-echo "$HOMEA/qemu-kvm -p $SERVER_PORT -w bash &">$HOME/startcustom.sh
-chmod +x $HOME/startcustom.sh
-fi
 
-if [ -f $HOME/startcustom.sh ];
-then
-cd $HOME
-sh $HOME/startcustom.sh &
 fi
 
 fi
