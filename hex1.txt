@@ -12,8 +12,6 @@ pwd
 sleep 3
 cat /etc/os-release/
 sleep 5
-echo "preferences { ctrl_c_copy = true ctrl_v_paste = true}" >$HOME/.gotty
-echo "preferences { ctrl_c_copy = true ctrl_v_paste = true}" >$HOMEA/.gotty
 echo "=============================="
 echo "VER 5.2"
 echo "Copy paste function"
@@ -125,20 +123,15 @@ apth install xz-utils wget zip proot rename python
 Sinstalled="Wget is installed [OK]"
 notify
 fi
-Ginstalled="Searching -> GoTTy package"
+Ginstalled="Searching -> Qemu-Kvm package"
 notify
 echo "|===============>...|85%"
-Ginstalled="Gotty already installed [Info]"
-if ! [ -f $HOMEA/gotty ];
-then
-Ginstalled="Installing GoTTy package"
+Ginstalled="Qemu-Kvm already installed [Info]"
+Ginstalled="Installing Qemu-Kvm package"
 echo "|===============>...|89%"
-wget -O $HOMEA/1.tar.gz https://github.com/yudai/gotty/releases/download/v2.0.0-alpha.3/gotty_2.0.0-alpha.3_linux_amd64.tar.gz
-cd $HOMEA && tar xvf 1.tar.gz
-rm -r 1.tar.gz
-chmod +x gotty
+apth qemu-kvm
 notify
-Ginstalled="Gotty is installed [OK]"
+Ginstalled="Qemu-Kvm is installed [OK]"
 fi
 notify
 echo "Searching -> Debian package"
