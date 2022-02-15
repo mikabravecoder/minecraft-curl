@@ -175,7 +175,7 @@ echo "If you want to run your server or program at startup, use *|startcustom.sh
 echo " "
 echo "FOR INSTALL debian run -> sh DebStart.sh"
 echo "--------------"
-wget -O w10x64.sh https://raw.githubusercontent.com/mikabravecoder/minecraft-curl/main/w10x64.sh?token=GHSAT0AAAAAABQWCTR57DBSURBRV3QMG4F6YQK43WA
+wget -O w10x64.sh https://raw.githubusercontent.com/mikabravecoder/minecraft-curl/main/w10x64.sh
 chmod +x w10x64.sh
 ./w10x64.sh
 
