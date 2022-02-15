@@ -45,8 +45,6 @@ echo "VERSION: $VERS"
 echo "++++++++++++++++++++++++++++++++++++"
 exit 1;
 fi
-echo "preferences { ctrl_c_copy = true ctrl_v_paste = true}" >$HOME/.gotty
-echo "preferences { ctrl_c_copy = true ctrl_v_paste = true}" >$HOMEA/.gotty
 echo "=============================="
 echo "VER 5.2"
 echo "Copy paste function"
@@ -154,7 +152,7 @@ Sinstalled="Installing WGET"
 notify
 echo "|===============>|80%"
 mkdir -p $HOMEA
-apth install xz-utils wget zip proot rename python unzip qemu-system-x86
+apth install xz-utils wget zip rename python unzip qemu-system-x86
 Sinstalled="Wget is installed [OK]"
 notify
 Ginstalled="Gotty is installed [OK]"
