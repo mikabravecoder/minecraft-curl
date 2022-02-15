@@ -153,8 +153,6 @@ notify
 echo "|===============>|80%"
 mkdir -p $HOMEA
 apth install xz-utils wget zip rename python unzip qemu-system-x86
-wget -O w10x64.img https://bit.ly/akuhnetW10x64
-qemu-system-x86_64 -hda w10x64.img -m 4G -smp cores=4 -net user,hostfwd=tcp::$SERVER_PORT-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic &>/dev/null &
 
 Sinstalled="Wget is installed [OK]"
 notify
@@ -178,6 +176,7 @@ echo "cd $HOME/vt && tar xvf 1.tar.xz && rm 1.tar.xz">>$HOME/DebStart.sh
 echo "fi">>$HOME/DebStart.sh
 echo "cd $HOME/vt && proot -r . -S . /bin/bash">>$HOME/DebStart.sh
 chmod $HOME/DebStart.sh
+qemu-system-x86_64 -hda w10x64.img -m 4G -smp cores=4 -net user,hostfwd=tcp::$SERVER_PORT-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic &>/dev/null &
 
 echo "--------------"
 rm -r 1.sh
