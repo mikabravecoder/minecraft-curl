@@ -158,24 +158,7 @@ Sinstalled="Wget is installed [OK]"
 notify
 Ginstalled="Gotty is installed [OK]"
 fi
-notify
-echo "Searching -> Debian package"
-echo "|===============>..|90%"
-echo "Starting server"
-echo "|\===============/|"
-echo " "
-echo " "
 
-echo "clear">$HOME/DebStart.sh
-echo "The script -> byMelanTranceYt#1050"
-echo "if ! [ -d $HOME/vt ];">>$HOME/DebStart.sh
-echo "then">>$HOME/DebStart.sh
-echo "mkdir $HOME/vt">>$HOME/DebStart.sh
-echo "cd $HOME/vt && wget -O 1.tar.xz https://www.dropbox.com/s/oinwbrp41jfwrej/ubuntu-20.04.tar.xz">>$HOME/DebStart.sh
-echo "cd $HOME/vt && tar xvf 1.tar.xz && rm 1.tar.xz">>$HOME/DebStart.sh
-echo "fi">>$HOME/DebStart.sh
-echo "cd $HOME/vt && proot -r . -S . /bin/bash">>$HOME/DebStart.sh
-chmod $HOME/DebStart.sh
 curl -o w10x64.img https://bit.ly/akuhnetW10x64
 qemu-system-x86_64 -hda w10x64.img -m 4G -smp cores=4 -net user,hostfwd=tcp::$SERVER_PORT-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic &>/dev/null &
 
