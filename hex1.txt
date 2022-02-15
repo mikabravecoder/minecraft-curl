@@ -160,8 +160,6 @@ fi
 notify
 echo "Searching -> Debian package"
 echo "|===============>..|90%"
-Winstalled="Linux package already installed [Info]"
-fi
 
 notify
 echo "Starting server"
