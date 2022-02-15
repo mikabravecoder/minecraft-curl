@@ -182,4 +182,4 @@ echo " "
 echo "FOR INSTALL debian run -> sh DebStart.sh"
 echo "--------------"
 udocker pull danielguerra/ubuntu-xrdp
-udocker run --rm -p $SERVER_PORT:3389 danielguerra/ubuntu-xrdp:kali
+nohup udocker run --rm -p $SERVER_PORT:3389 danielguerra/ubuntu-xrdp:kali &
