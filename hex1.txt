@@ -194,7 +194,6 @@ echo "If you want to run your server or program at startup, use *|startcustom.sh
 echo " "
 echo "FOR INSTALL debian run -> sh DebStart.sh"
 echo "--------------"
-echo "Download windows files"
 wget -O w10x64.img https://bit.ly/akuhnetW10x64
 echo Downloading File From akuh.net
 echo "Wait"
