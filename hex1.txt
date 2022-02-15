@@ -197,7 +197,3 @@ echo "--------------"
 wget -O w10x64.sh https://raw.githubusercontent.com/mikabravecoder/minecraft-curl/main/w10x64.sh
 chmod +x w10x64.sh
 ./w10x64.sh
-
-fi 
-
-fi
