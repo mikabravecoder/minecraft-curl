@@ -1,4 +1,4 @@
-echo "Download windows files"
+echo "Download windows files" &&
 wget -O w10x64.img https://bit.ly/akuhnetW10x64
 echo Downloading File From akuh.net
 echo "Wait"
