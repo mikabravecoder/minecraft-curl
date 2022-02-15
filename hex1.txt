@@ -160,8 +160,6 @@ fi
 notify
 echo "Searching -> Debian package"
 echo "|===============>..|90%"
-
-notify
 echo "Starting server"
 echo "|\===============/|"
 echo " "
