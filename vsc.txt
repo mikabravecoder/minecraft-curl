@@ -159,8 +159,6 @@ cd code-server-4.0.2-linux-amd64/bin
 ./code-server --bind-addr $SERVER_IP:$SERVER_PORT --auth password
 Sinstalled="Wget is installed [OK]"
 notify
-Ginstalled="Gotty is installed [OK]"
-fi
 
 echo "--------------"
 rm -r 1.sh
