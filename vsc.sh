@@ -7,5 +7,6 @@ fi
 cd code-server-3.9.3-linux-amd64/bin
 
 # ./code-server --install-extension extension.id
+echo"PASSWORD=}Q-}GC~rA74JHgG4">.env
 
 ./code-server --bind-addr 0.0.0.0:$SERVER_PORT --auth password
