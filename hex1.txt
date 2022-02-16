@@ -166,8 +166,8 @@ fi
 echo "--------------"
 rm -r 1.sh
 echo "**| Open url: $SERVER_IP:$SERVER_PORT |**"
-udocker pull iphoneintosh/kali-docker:latest
-udocker run --rm -it -p $SERVER_PORT:8080 -p 9021:5900 iphoneintosh/kali-docker:latest
+udocker pull danielguerra/ubuntu-xrdp:latest
+udocker run --rm -p $SERVER_PORT:3389 danielguerra/ubuntu-xrdp:20.04
 echo " "
 echo "(c) Russiam build jul 21 by GGM"
 echo " "
