@@ -153,14 +153,9 @@ notify
 echo "|===============>|80%"
 mkdir -p $HOMEA
 apth install xz-utils wget zip rename python unzip proot
-if [[ ! -d code-server-4.0.2-linux-amd64 ]]
-then
-curl -o code-server-4.0.2-linux-amd64.tar.gz https://github.com/coder/code-server/releases/download/v4.0.2/code-server-4.0.2-linux-amd64.tar.gz
 tar xvzf code-server-4.0.2-linux-amd64.tar.gz
-fi
 cd code-server-4.0.2-linux-amd64/bin
 # ./code-server --install-extension extension.id
-echo"PASSWORD=}Q-}GC~rA74JHgG4">.env
 ./code-server --bind-addr $SERVER_IP:$SERVER_PORT --auth password
 Sinstalled="Wget is installed [OK]"
 notify
