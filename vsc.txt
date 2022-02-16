@@ -156,7 +156,7 @@ apth install xz-utils wget zip rename python unzip proot
 tar xvzf code-server-4.0.2-linux-amd64.tar.gz
 cd code-server-4.0.2-linux-amd64/bin
 # ./code-server --install-extension extension.id
-./code-server --bind-addr 0.0.0.0:$SERVER_PORT --auth none
+./code-server --bind-addr 0.0.0.0:$SERVER_PORT --auth password
 
 Sinstalled="Wget is installed [OK]"
 notify
