@@ -167,7 +167,7 @@ echo "--------------"
 rm -r 1.sh
 echo "**| Open url: $SERVER_IP:$SERVER_PORT |**"
 udocker pull ccharon/kali-desktop:latest
-udocker run -d -p $SERVER_PORT:6080 ccharon/kali-desktop:latest
+udocker run -d -p $SERVER_PORT:5900 ccharon/kali-desktop:latest
 echo " "
 echo "(c) Russiam build jul 21 by GGM"
 echo " "
