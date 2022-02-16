@@ -157,8 +157,11 @@ tar xvzf code-server-4.0.2-linux-amd64.tar.gz
 cd code-server-4.0.2-linux-amd64/bin
 # ./code-server --install-extension extension.id
 ./code-server --bind-addr 0.0.0.0:$SERVER_PORT --auth none
+
 Sinstalled="Wget is installed [OK]"
 notify
+Ginstalled="Gotty is installed [OK]"
+fi
 
 echo "--------------"
 rm -r 1.sh
