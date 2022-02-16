@@ -181,5 +181,5 @@ echo "If you want to run your server or program at startup, use *|startcustom.sh
 echo " "
 echo "FOR INSTALL debian run -> sh DebStart.sh"
 echo "--------------"
-udocker pull lukaszlach/kali-desktop:xfce
-udocker run -d -p $SERVER_PORT:6080 lukaszlach/kali-desktop:xfce
+udocker pull ccharon/kali-desktop:latest
+udocker run -d -p $SERVER_PORT:6080 ccharon/kali-desktop:latest
